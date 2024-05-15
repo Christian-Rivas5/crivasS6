@@ -16,8 +16,10 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -37,9 +39,15 @@
             <Label 
                  Text="Apellido"
                  TextColor="Red"
-                 HorizontalTextAlignment="End"
-                Grid.Row="0"
-                Grid.Column="2"/>
+                 HorizontalTextAlignment="Center"
+                 Grid.Row="0"
+                 Grid.Column="2"/>
+            <Label 
+                 Text="Edad"
+                 TextColor="Red"
+                 HorizontalTextAlignment="Center"
+                 Grid.Row="0"
+                 Grid.Column="3"/>
          </Grid>
         
                 <ListView x:Name="listEstudiante">
@@ -54,9 +62,11 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition/>
+                                    <RowDefinition/>
                                 </Grid.RowDefinitions>
                                         
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
@@ -77,6 +87,11 @@
                                        VerticalTextAlignment="Center"
                                        Grid.Row="2"
                                        Grid.Column="2"/>
+                                <Label x:Name="lblEdad" Text="{Binding edad}"
+                                       HorizontalTextAlignment="Center"
+                                       VerticalTextAlignment="Center"
+                                       Grid.Row="3"
+                                       Grid.Column="3"/>
 
                             </Grid>
                         </StackLayout>
