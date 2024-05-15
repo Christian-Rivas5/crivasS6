@@ -45,7 +45,7 @@
             <Label 
                  Text="Edad"
                  TextColor="Red"
-                 HorizontalTextAlignment="Center"
+                 HorizontalTextAlignment="Center" 
                  Grid.Row="0"
                  Grid.Column="3"/>
          </Grid>
